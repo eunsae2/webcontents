@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>animation</title>
+        <style>
+            img {
+                animation-name: swing;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            @keyframes swing {
+                from {transform: rotate(-90deg);}
+                to {transform: rotate(90deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <img src="media/spongebob.png">
+    </body>
+</html>
