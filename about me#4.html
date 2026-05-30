@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>About me</title>
-        <meta name="description" content="자기소개 웹페이지 만들기">
-        <meta name="keywords" content="컴퓨터공학, 자기소개, 포트폴리오">
-        <meta name="viewport" content="width=device-width">
-        <meta name="robots" content="index,follow">
-        <meta name="author" content="정은새">
 
-        <style>
+<head>
+    <meta charset="utf-8">
+    <title>About me</title>
+    <meta name="description" content="자기소개 웹페이지 만들기">
+    <meta name="keywords" content="컴퓨터공학, 자기소개, 포트폴리오">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="정은새">
+
+    <style>
         * {
             box-sizing: border-box;
         }
-        html, body {
+
+        html,
+        body {
             padding: 0px;
             margin: 0px;
             height: 100%;
             width: 1200px;
             margin: 0 auto;
         }
+
         header {
             height: 10%;
             background: yellow;
             overflow: hidden;
             border-bottom: 2px solid black;
         }
+
         h1 {
             color: brown;
             text-align: center;
             margin: 0px;
         }
+
         header p {
             margin: 0px;
             font-family: "휴먼편지체";
             font-size: 1em;
         }
+
         #middle {
             display: table;
             width: 100%;
         }
+
         nav {
             width: 20%;
             height: 82%;
@@ -48,11 +56,13 @@
             display: table-cell;
             padding: 15px 0px;
         }
+
         nav h2 {
             color: blue;
             margin-top: 0px;
             padding-left: 15px;
         }
+
         nav ul {
             list-style: disc;
             border: 2px dotted black;
@@ -60,15 +70,18 @@
             margin: 0px;
             width: 100%;
         }
+
         nav ul li {
             margin-bottom: 6px;
             font-family: "휴먼편지체";
         }
+
         nav a {
             text-decoration: none;
             color: black;
             font-family: "휴먼편지체";
         }
+
         section {
             width: 80%;
             height: 82%;
@@ -77,15 +90,18 @@
             display: table-cell;
             padding: 15px;
         }
+
         section h2 {
             color: blue;
             margin-top: 0px;
         }
+
         section p {
             font-family: "휴먼편지체";
             line-height: 1.6;
             font-size: 0.9em;
         }
+
         footer {
             height: 8%;
             background: plum;
@@ -94,47 +110,68 @@
             padding-top: 10px;
             padding-left: 10px;
         }
+
         footer p {
             margin: 0px;
             font-family: "휴먼편지체";
             font-size: 0.9em;
             color: black;
         }
+
         footer a {
             text-decoration: none;
             color: blue;
         }
-        .bg-yellow { background-color: #fffacd; }
-        .bg-green { background-color: #e2f0d9; }
-        .bg-blue { background-color: #bde0fe; }
-        .bg-pink { background-color: #ffe4e1; }
+
+        .bg-yellow {
+            background-color: #fffacd;
+        }
+
+        .bg-green {
+            background-color: #e2f0d9;
+        }
+
+        .bg-blue {
+            background-color: #bde0fe;
+        }
+
+        .bg-pink {
+            background-color: #ffe4e1;
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
             text-align: center;
             font-size: 0.85em;
         }
+
         table thead th {
             background-color: #F2F8FA;
             height: 36px;
             font-weight: bold;
         }
-        table th, table td {
+
+        table th,
+        table td {
             width: 16%;
             height: 40px;
             vertical-align: middle;
             padding: 2px;
         }
+
         #timetable table th,
         #timetable table tr td:first-child {
             background-color: #FDF5E6;
             font-weight: bold;
         }
+
         #hobbies table td {
             background-color: transparent;
             padding: 4px;
             text-align: center;
         }
+
         #hobbies table img {
             width: 100%;
             max-width: 200px;
@@ -143,25 +180,39 @@
             display: block;
             margin: 0 auto;
         }
+
         #hobbies tfoot th {
             font-weight: normal;
         }
-        #hobbies tfoot th:nth-child(1) { background-color: #fffacd; }
-        #hobbies tfoot th:nth-child(2) { background-color: #e2f0d9; }
-        #hobbies tfoot th:nth-child(3) { background-color: #bde0fe; }
-        .bg-even { background-color: #F2F8FA; }
+
+        #hobbies tfoot th:nth-child(1) {
+            background-color: #fffacd;
+        }
+
+        #hobbies tfoot th:nth-child(2) {
+            background-color: #e2f0d9;
+        }
+
+        #hobbies tfoot th:nth-child(3) {
+            background-color: #bde0fe;
+        }
+
+        .bg-even {
+            background-color: #F2F8FA;
+        }
 
         #hobbies {
             margin-bottom: 20px;
         }
-        </style>
-    </head>
+    </style>
+</head>
+
 <body>
 
     <header>
         <h1>About me</h1>
         <p>안녕하세요! 컴퓨터공학과 신입생 정은새입니다.<br>
-        다양한 관심분야와 취미 활동을 하고 있습니다.</p>
+            다양한 관심분야와 취미 활동을 하고 있습니다.</p>
     </header>
 
     <div id="middle">
@@ -208,9 +259,9 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th style="background-color:#F2F8FA;">ridding</th>
-                            <th style="background-color:#F2F8FA;">running</th>
-                            <th style="background-color:#F2F8FA;">reading</th>
+                            <th style="background-color:#F2F8FA;">Game</th>
+                            <th style="background-color:#F2F8FA;">Music</th>
+                            <th style="background-color:#F2F8FA;">Movie</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -221,17 +272,80 @@
                 <hr>
                 <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;">
                     <thead>
-                        <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+                        <tr>
+                            <th>구분</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                        </tr>
                     </thead>
                     <tbody>
-                        <tr><td>09</td><td>&emsp;</td><td>&emsp;</td><td>&emsp;</td><td>&emsp;</td><td>&emsp;</td></tr>
-                        <tr class="bg-even"><td>10</td><td>&emsp;</td><td>&emsp;</td><td class="bg-yellow">인터넷콘텐츠<br>(101/공603)</td><td class="bg-blue">컴퓨터과학개론<br>(101/공608)</td><td>&emsp;</td></tr>
-                        <tr><td>11</td><td>&emsp;</td><td>&emsp;</td><td class="bg-yellow">인터넷콘텐츠<br>(101/공603)</td><td class="bg-blue">컴퓨터과학개론<br>(101/공608)</td><td>&emsp;</td></tr>
-                        <tr class="bg-even"><td>12</td><td>&emsp;</td><td>&emsp;</td><td class="bg-yellow">인터넷콘텐츠<br>(101/공603)</td><td class="bg-blue">컴퓨터과학개론<br>(101/공608)</td><td>&emsp;</td></tr>
-                        <tr><td>13</td><td>&emsp;</td><td>&emsp;</td><td class="bg-green">SW개발문제해결능력<br>(101/공608)</td><td>&emsp;</td><td>&emsp;</td></tr>
-                        <tr class="bg-even"><td>14</td><td class="bg-pink">프로그래밍언어실습I<br>(101/공603)</td><td>&emsp;</td><td class="bg-green">SW개발문제해결능력<br>(101/공608)</td><td>&emsp;</td><td>&emsp;</td></tr>
-                        <tr><td>15</td><td class="bg-pink">프로그래밍언어실습I<br>(101/공603)</td><td>&emsp;</td><td class="bg-green">SW개발문제해결능력<br>(101/공608)</td><td>&emsp;</td><td>&emsp;</td></tr>
-                        <tr class="bg-even"><td>16</td><td class="bg-pink">프로그래밍언어실습I<br>(101/공603)</td><td>&emsp;</td><td>&emsp;</td><td>&emsp;</td><td>&emsp;</td></tr>
+                        <tr>
+                            <td>09</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr class="bg-even">
+                            <td>10</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td class="bg-yellow">인터넷콘텐츠<br>(101/공603)</td>
+                            <td class="bg-blue">컴퓨터과학개론<br>(101/공608)</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td class="bg-yellow">인터넷콘텐츠<br>(101/공603)</td>
+                            <td class="bg-blue">컴퓨터과학개론<br>(101/공608)</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr class="bg-even">
+                            <td>12</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td class="bg-yellow">인터넷콘텐츠<br>(101/공603)</td>
+                            <td class="bg-blue">컴퓨터과학개론<br>(101/공608)</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td class="bg-green">SW개발문제해결능력<br>(101/공608)</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr class="bg-even">
+                            <td>14</td>
+                            <td class="bg-pink">프로그래밍언어실습I<br>(101/공603)</td>
+                            <td>&emsp;</td>
+                            <td class="bg-green">SW개발문제해결능력<br>(101/공608)</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td class="bg-pink">프로그래밍언어실습I<br>(101/공603)</td>
+                            <td>&emsp;</td>
+                            <td class="bg-green">SW개발문제해결능력<br>(101/공608)</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                        </tr>
+                        <tr class="bg-even">
+                            <td>16</td>
+                            <td class="bg-pink">프로그래밍언어실습I<br>(101/공603)</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                            <td>&emsp;</td>
+                        </tr>
                     </tbody>
                 </table>
             </article>
@@ -245,4 +359,5 @@
     </footer>
 
 </body>
+
 </html>
